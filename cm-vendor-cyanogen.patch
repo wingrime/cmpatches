@@ -1,0 +1,54 @@
+diff --git a/products/AndroidProducts.mk b/products/AndroidProducts.mk
+index 106dcbc..d010bfe 100644
+--- a/products/AndroidProducts.mk
++++ b/products/AndroidProducts.mk
+@@ -75,4 +75,5 @@ PRODUCT_MAKEFILES := \
+     $(LOCAL_DIR)/cyanogen_zeppelin.mk \
+     $(LOCAL_DIR)/cyanogen_zero.mk \
+     $(LOCAL_DIR)/cyanogen_zeus.mk \
+-    $(LOCAL_DIR)/cyanogen_zeusc.mk
++    $(LOCAL_DIR)/cyanogen_zeusc.mk \
++    $(LOCAL_DIR)/cyanogen_swift.mk
+diff --git a/products/common.mk b/products/common.mk
+index 195bc57..244f4e7 100644
+--- a/products/common.mk
++++ b/products/common.mk
+@@ -3,7 +3,7 @@ PRODUCT_NAME := cyanogen
+ PRODUCT_BRAND := cyanogen
+ PRODUCT_DEVICE := generic
+ 
+-PRODUCT_PACKAGES += ADWLauncher
++#PRODUCT_PACKAGES += ADWLauncher
+ 
+ ifdef CYANOGEN_NIGHTLY
+ PRODUCT_PROPERTY_OVERRIDES += \
+@@ -35,8 +35,6 @@ PRODUCT_PACKAGES += \
+     AndroidTerm \
+     FileManager \
+     CMParts \
+-    CMStats \
+-    CMUpdateNotify \
+     DSPManager \
+     libcyanogen-dsp \
+     Pacman \
+@@ -86,8 +84,8 @@ PRODUCT_COPY_FILES += \
+ PRODUCT_COPY_FILES += \
+ #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
+ 
+-PRODUCT_COPY_FILES +=  \
+-    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
++#PRODUCT_COPY_FILES +=  \
++#    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
+ 
+ # Enable SIP+VoIP on all targets
+ PRODUCT_COPY_FILES += \
+diff --git a/vendorsetup.sh b/vendorsetup.sh
+index f4c0f06..1dffe74 100644
+--- a/vendorsetup.sh
++++ b/vendorsetup.sh
+@@ -82,4 +82,5 @@ add_lunch_combo cyanogen_zeppelin-eng
+ add_lunch_combo cyanogen_zero-eng
+ add_lunch_combo cyanogen_zeus-eng
+ add_lunch_combo cyanogen_zeusc-eng
++add_lunch_combo cyanogen_swift-eng
+ 
