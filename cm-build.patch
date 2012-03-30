@@ -1,0 +1,39 @@
+diff --git a/target/product/full_base.mk b/target/product/full_base.mk
+index 3a71675..ea28569 100644
+--- a/target/product/full_base.mk
++++ b/target/product/full_base.mk
+@@ -21,7 +21,6 @@
+ PRODUCT_PACKAGES := \
+     OpenWnn \
+     PinyinIME \
+-    VoiceDialer \
+     libWnnEngDic \
+     libWnnJpnDic \
+     libwnndict
+diff --git a/target/product/generic.mk b/target/product/generic.mk
+index 8c14f99..e75b149 100644
+--- a/target/product/generic.mk
++++ b/target/product/generic.mk
+@@ -34,7 +34,6 @@ PRODUCT_PACKAGES := \
+     Mms \
+     Music \
+     Provision \
+-    Protips \
+     QuickSearchBox \
+     Settings \
+     Superuser \
+diff --git a/target/product/small_base.mk b/target/product/small_base.mk
+index 9d6cc87..43f203b 100644
+--- a/target/product/small_base.mk
++++ b/target/product/small_base.mk
+@@ -18,8 +18,8 @@
+ # Open-Source part of the tree. This is a base configuration to
+ # bes used for AOSP builds on various target devices.
+ 
+-PRODUCT_PACKAGES := \
+-    VoiceDialer
++#PRODUCT_PACKAGES := \
++#    VoiceDialer
+ 
+ # Additional settings used in all AOSP builds
+ PRODUCT_PROPERTY_OVERRIDES := \

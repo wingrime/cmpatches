@@ -1,0 +1,31 @@
+diff --git a/apps/Development/AndroidManifest.xml b/apps/Development/AndroidManifest.xml
+index 6cebd08..e4773a6 100644
+--- a/apps/Development/AndroidManifest.xml
++++ b/apps/Development/AndroidManifest.xml
+@@ -49,10 +49,6 @@
+ 
+         <activity android:name="Development" android:label="Dev Tools"
+             android:icon="@drawable/ic_launcher_devtools">
+-            <intent-filter>
+-                <action android:name="android.intent.action.MAIN" />
+-                <category android:name="android.intent.category.LAUNCHER" />
+-            </intent-filter>
+         </activity>
+         <activity android:name="PackageBrowser" android:label="Package Browser">
+             <intent-filter>
+diff --git a/apps/SpareParts/AndroidManifest.xml b/apps/SpareParts/AndroidManifest.xml
+index 85de7a4..a493851 100644
+--- a/apps/SpareParts/AndroidManifest.xml
++++ b/apps/SpareParts/AndroidManifest.xml
+@@ -24,11 +24,6 @@
+             android:icon="@drawable/app_icon">
+ 
+         <activity android:name="SpareParts">
+-            <intent-filter>
+-                <action android:name="android.intent.action.MAIN" />
+-                <category android:name="android.intent.category.DEFAULT" />
+-                <category android:name="android.intent.category.LAUNCHER" />
+-            </intent-filter>
+         </activity>
+ 
+     </application>

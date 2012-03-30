@@ -1,0 +1,15 @@
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 0329a9b..a7bf13f 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -11,10 +11,6 @@
+                 android:launchMode="singleTask"
+                 android:configChanges="keyboard|keyboardHidden|orientation"
+                 android:windowSoftInputMode="adjustResize|stateVisible">
+-            <intent-filter>
+-                <action android:name="android.intent.action.MAIN" />
+-                <category android:name="android.intent.category.LAUNCHER" />
+-            </intent-filter>
+         </activity>
+         <activity android:name="TermPreferences"/>
+         <activity android:name="WindowList"/>
